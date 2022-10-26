@@ -1,0 +1,8 @@
+[ Unit ]
+Description=Service for soundfix program runtime
+[Service]
+Type=simple
+ExecStart=mbsoundfix
+WorkingDirectory=/
+[Install]
+WantedBy=default.target
