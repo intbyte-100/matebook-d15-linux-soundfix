@@ -1,7 +1,15 @@
 #!/bin/bash
-echo "Compiling...."
+user=$(whoami)
+if [[ $user != "root" ]]; then
+  echo Please run this script from root 
+  exit 1
+fi
+
+printf "[ Compiling... ]\n\n"
 gcc -O3 -Os -Wall main.c -o mbsoundfix -lm $(pkg-config --cflags --libs libpipewire-0.3)
-echo "Copying files..."
-sudo cp ./mbsoundfix /bin/
-echo "Soundfix is installed!!!"
-echo "Add 'mbsoundfix' command to autostart to fix the sound"
+printf "[ Copying files... ]\n"
+cp ./mbsoundfix /usr/bin
+cp ./mbsoundfix.service /etc/systemd/system/
+systemctl daemon-reload
+systemctl status mbsoundfix.service 
+printf "\n[ mbsoundfix service was installed, use it with systemctl ]\n"
