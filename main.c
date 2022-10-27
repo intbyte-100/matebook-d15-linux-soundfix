@@ -57,8 +57,10 @@ static const struct pw_stream_events stream_events = {
  
 int main(int argc, char *argv[])
 {
-		system("amixer -c 0 sset Headphone on 100");
-		system("amixer -c 0 sset DAC on 192");
+        system("amixer -c 0 sset Headphone on 100");
+        system("amixer -c 0 sset DAC on 192");
+
+
 		
         struct data data = { 0, };
         const struct spa_pod *params[1];
