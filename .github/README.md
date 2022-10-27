@@ -4,6 +4,8 @@
 mbsoundfix is a program fixing sound on matebook d15 laptop on linux.
 it's requires pipewire 3.0 and higher and amixer
 
+*works with intel only!!!*
+
 ### Requirements
 - kernel 5.19 <
 - pipewire 3.0 <
