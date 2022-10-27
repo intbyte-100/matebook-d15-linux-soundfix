@@ -18,6 +18,8 @@ it's requires pipewire 3.0 and higher and amixer
 
 
 ### How to use ?
+
+#### Systemd auto start now is no working, so you have to add mbsound to auto start yourself 
 ```sh
 git clone git@github.com:intbyte-100/matebook-d15-linux-soundfix
 cd matebook-d15-linux-soundfix
