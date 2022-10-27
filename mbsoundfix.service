@@ -5,4 +5,4 @@ Type=simple
 ExecStart=mbsoundfix
 WorkingDirectory=/
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
