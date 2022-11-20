@@ -27,6 +27,10 @@ git clone git@github.com:intbyte-100/matebook-d15-linux-soundfix
 cd matebook-d15-linux-soundfix
 ./install.sh
 
+systemctl --user enable mbsoundfix.service
+systemctl --user start mbsoundfix.service
+
 # optional
-systemctl enable mbsoundfix.service
+systemctl --user status mbsoundfix.service
 ```
+
