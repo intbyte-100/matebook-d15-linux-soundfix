@@ -11,8 +11,8 @@ However, manual run per boot is required and inserting headphones and removing i
 *works with intel only!!!*
 
 ### Requirements
-- kernel 5.19 <
-- pipewire 3.0 <
+- kernel 5.19 and above
+- pipewire 3.0 and above
 - alsa-utils
 - sof-firmware
 - base-devel
