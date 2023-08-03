@@ -4,6 +4,10 @@
 mbsoundfix is a program fixing sound on matebook d15 laptop on linux.
 it's requires pipewire 3.0 and higher and amixer
 
+edit:
+this also works on Matebook D14 2021 Intel on Fedora 38 GNOME. 
+However, manual run per boot is required and inserting headphones and removing it, will cause the speaker audio to not run, so you need to run the script again.
+
 *works with intel only!!!*
 
 ### Requirements
@@ -16,7 +20,7 @@ it's requires pipewire 3.0 and higher and amixer
 ### Was tested on...
 - [x] Manjaro
 - [ ] Debian
-- [ ] Fedora 
+- [x] Fedora 
 
 
 ### How to use ?
